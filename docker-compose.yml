@@ -1,0 +1,6 @@
+services:
+  authentication.project:
+    image: ${DOCKER_REGISTRY-}authenticationproject
+    build:
+      context: .
+      dockerfile: Authentication.Project/Dockerfile
